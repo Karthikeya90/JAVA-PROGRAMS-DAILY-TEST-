@@ -1,0 +1,105 @@
+1..STRING PALINDROME
+
+ import java.util.*;   
+class Stringpalindrome 
+{  
+   public static void main(String args[])  
+   {  
+      String original, reverse = ""; // Objects of String class  
+      Scanner in = new Scanner(System.in);   
+      System.out.println("Enter a string/number to check if it is a palindrome");  
+      original = in.nextLine();   
+      int length = original.length();   
+      for ( int i = length - 1; i >= 0; i-- )  
+         reverse = reverse + original.charAt(i);  
+      if (original.equals(reverse))  
+         System.out.println("Entered string/number is a palindrome.");  
+      else  
+         System.out.println("Entered string/number isn't a palindrome.");   
+   }  
+}  
+
+2.VOWELS AND COSONANTS
+
+
+public class Vowelandconsonant { 
+
+	static void Vowel_Or_Consonant(char y) 
+	{ 
+if (y == 'a' || y == 'e' || y == 'i' || y == 'o'|| y == 'u') 
+	System.out.println("It is a Vowel."); 
+else
+System.out.println("It is a Consonant."); 
+	} 
+
+	
+	static public void main(String[] args) 
+	{ 
+		Vowel_Or_Consonant('b'); 
+		Vowel_Or_Consonant('u'); 
+	} 
+}
+
+3.POWER OF NUMBER
+
+class Powerofnumber{
+public static void main(String[] argrs){
+float base=4,exponent=3;
+int res=1;
+while(exponent!=0){
+res*=base;
+exponent--;
+}
+System.out.println(res);
+}
+}
+
+4..REMAINDER AND QUOTIENT
+
+class RemQuo{
+public static void main(String[] args){
+int a=5,b=9;
+int rem,quo;
+rem=a%b;
+quo=a/b;
+System.out.println("remainder = "+ rem);
+System.out.println("quotient = "+ quo);
+}
+}
+5.SIMPLE INTREST
+
+class Simpleintrest{
+public static void main(String[] args){
+int p,r,t;
+int res;
+p=12;
+r=3;
+t=19;
+res=p*r*t/100;
+System.out.println("simple intrest = "+res);
+}
+}
+
+6.FIBONACII SERIES
+
+class Fibonacii {
+  public static void main(String[] args) {
+
+    int n = 10, firstTerm = 0, secondTerm = 1;
+    System.out.println("Fibonacci Series till " + n + " terms:");
+
+    for (int i = 1; i <= n; ++i) {
+      System.out.print(firstTerm + ", ");
+
+      // compute the next term
+      int nextTerm = firstTerm + secondTerm;
+      firstTerm = secondTerm;
+      secondTerm = nextTerm;
+    }
+  }
+}
+
+
+
+
+
