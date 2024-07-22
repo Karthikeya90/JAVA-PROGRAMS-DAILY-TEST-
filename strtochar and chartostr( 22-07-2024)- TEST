@@ -1,0 +1,11 @@
+public class CharStrConvert {
+    public static void main(String[] args) {
+        char charValue = 'A';
+        String strFromChar = Character.toString(charValue);
+        System.out.println("String from char: " + strFromChar);
+
+        String strValue = "Hello";
+        char charFromString = strValue.charAt(0);
+        System.out.println("Char from string: " + charFromString);
+    }
+}
