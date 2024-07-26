@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Voteelgible{
+public static int  voting(int x,int y){
+if(x>=y &&x!=0){
+System.out.println("U ARE ELGIBLE FOR CAST VOTING \t"+x);
+return x;
+}
+else{
+System.out.println("U ARE NOT ELGIBLE FOR CAST VOTE:"+y);
+return y;
+}
+}
+public static void main(String[] args){
+int x,y;
+Scanner sc =new Scanner(System.in);
+System.out.println("enter the age of person:");
+x=sc.nextInt();
+System.out.println("enter the age  elgible for cast voting:");
+y=sc.nextInt();
+System.out.println("VOTE ELGIBLE :"+voting(x,y));
+}
+}
