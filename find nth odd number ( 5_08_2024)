@@ -1,0 +1,10 @@
+public class OddNumberFind {
+public static int findNthOddAfterN(int n, int nth) {
+return 2 * n + 2 * nth - 1;
+}
+public static void main(String[] args) {
+int n = 5; // n odd numbers
+int nth = 3; // find the 3rd odd number after n odd numbers
+int result = findNthOddAfterN(n, nth);
+}
+}
