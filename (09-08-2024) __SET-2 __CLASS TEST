@@ -1,0 +1,67 @@
+first program:
+write a program to find the second largest number in a array in java 
+
+public class SecondLargestNumber {
+    public static void main(String[] args) {
+        int[] numbers = {10, 20, 5, 15, 30};
+        int firstLargest = Integer.MIN_VALUE;
+        int secondLargest = Integer.MIN_VALUE;
+
+        for (int number : numbers) {
+            if (number > firstLargest) {
+                secondLargest = firstLargest;
+                firstLargest = number;
+            } else if (number > secondLargest && number != firstLargest) {
+                secondLargest = number;
+            }
+        }
+
+        System.out.println("Second Largest Number: " + secondLargest);
+    }
+}
+
+
+
+second program:
+write a program to check if a given string is a palindrome in java
+
+public class PalindromeChecker {
+    public static boolean isPalindrome(String str) {
+        String cleanStr = str.replaceAll("[^a-zA-Z0-9]", "").toLowerCase();
+        int left = 0;
+        int right = cleanStr.length() - 1;
+        
+        while (left < right) {
+            if (cleanStr.charAt(left) != cleanStr.charAt(right)) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+
+    public static void main(String[] args) {
+        String testStr = "A man, a plan, a canal, Panama";
+        
+        if (isPalindrome(testStr)) {
+            System.out.println("The string is a palindrome.");
+        } else {
+            System.out.println("The string is not a palindrome.");
+        }
+    }
+}
+
+
+
+THIRD PROGRAM:
+write a program to reverse a string in java
+
+public class ReverseString {
+    public static void main(String[] args) {
+        String str = "Hello, World!";
+        String reversed = new StringBuilder(str).reverse().toString();
+        System.out.println("Original String: " + str);
+        System.out.println("Reversed String: " + reversed);
+    }
+}
